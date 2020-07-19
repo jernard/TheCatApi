@@ -112,6 +112,37 @@
                                             <outlet property="nameKittyLbl" destination="rGt-sx-hI4" id="gpD-cs-wss"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noData" rowHeight="280" id="m1n-ug-cNf">
+                                        <rect key="frame" x="0.0" y="329" width="414" height="280"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1n-ug-cNf" id="zKt-4e-FqW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImage" translatesAutoresizingMaskIntoConstraints="NO" id="fUP-4O-JhW">
+                                                    <rect key="frame" x="103.5" y="36.5" width="207" height="207"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="fUP-4O-JhW" secondAttribute="height" multiplier="1:1" id="OBt-6w-PdG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cam-Kx-hzS">
+                                                    <rect key="frame" x="30" y="251.5" width="354" height="24"/>
+                                                    <fontDescription key="fontDescription" name="PingFangHK-Ultralight" family="PingFang HK" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="fUP-4O-JhW" firstAttribute="centerX" secondItem="zKt-4e-FqW" secondAttribute="centerX" id="6fn-bJ-Q8C"/>
+                                                <constraint firstItem="Cam-Kx-hzS" firstAttribute="top" secondItem="fUP-4O-JhW" secondAttribute="bottom" constant="8" id="Che-WP-P0o"/>
+                                                <constraint firstAttribute="trailing" secondItem="Cam-Kx-hzS" secondAttribute="trailing" constant="30" id="IAR-oD-CTz"/>
+                                                <constraint firstItem="fUP-4O-JhW" firstAttribute="centerY" secondItem="zKt-4e-FqW" secondAttribute="centerY" id="hSw-AE-kDb"/>
+                                                <constraint firstItem="fUP-4O-JhW" firstAttribute="width" secondItem="zKt-4e-FqW" secondAttribute="width" multiplier="0.5" id="kgt-yZ-AFs"/>
+                                                <constraint firstItem="Cam-Kx-hzS" firstAttribute="leading" secondItem="zKt-4e-FqW" secondAttribute="leading" constant="30" id="o5L-tz-QH4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="T2K-MJ-Lxh" id="9c0-3g-sUt"/>
@@ -133,6 +164,7 @@
     </scenes>
     <resources>
         <image name="Like" width="64" height="64"/>
+        <image name="NoImage" width="500" height="500"/>
         <image name="dislike" width="64" height="64"/>
     </resources>
 </document>
